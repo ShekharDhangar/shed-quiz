@@ -9,9 +9,7 @@
     padding-inline: 5rem;
     gap: 2rem;
 }
-.quiz-heading{
-    flex-direction: column;
-}
+
 .hero-container .img-container{
     width: 75%;
 }
@@ -24,9 +22,6 @@
     width: 100%;
 }
 
-.quiz-card-container{
-    margin-top: 10rem;
-}
 .img-container > img{
     max-inline-size: 100%;
 }
