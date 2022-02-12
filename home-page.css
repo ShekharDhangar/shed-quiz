@@ -1,12 +1,10 @@
 @import url('https://shed-ui.netlify.app/component.css');
 @import url(/utils.css);
 
-.nav-icon-container{
-    margin-left: auto;
-}
 .top{
     margin-top: 10rem;
 }
+
 .hero-container{
     padding-inline: 5rem;
     gap: 2rem;
@@ -29,25 +27,9 @@
 .quiz-card-container{
     margin-top: 10rem;
 }
-
-/* Vertical card */
-.vertical-card{
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow-clr);
-    margin: 1rem;
-    max-width: 30rem;
+.img-container > img{
+    max-inline-size: 100%;
 }
-.vertical-card .img-container {
-    width: 30rem;
-    height: 20rem;
-}
-
-.vertical-card .card-btn-container{
-    margin-top: 1rem;
-    padding: 5px 1rem;
-}
-
 
 /* FOOTER */
 .footer-container {
@@ -63,11 +45,6 @@
   
 
   /* MEDIA QUERIES */
-  @media only screen and (max-width:850px){
-    .search-container{
-        border: none;
-    }
-  }
 
   @media only screen and (max-width:770px){
       .hero-container{
