@@ -1,0 +1,89 @@
+@import url('https://shed-ui.netlify.app/component.css');
+@import url(/utils.css);
+
+.nav-icon-container{
+    margin-left: auto;
+}
+.top{
+    margin-top: 10rem;
+}
+.hero-container{
+    padding-inline: 5rem;
+    gap: 2rem;
+}
+.quiz-heading{
+    flex-direction: column;
+}
+.hero-container .img-container{
+    width: 75%;
+}
+.highlight-txt{
+    color: var(--primary-clr);
+}
+
+.see-quiz-btn{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.quiz-card-container{
+    margin-top: 10rem;
+}
+
+/* Vertical card */
+.vertical-card{
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-clr);
+    margin: 1rem;
+    max-width: 30rem;
+}
+.vertical-card .img-container {
+    width: 30rem;
+    height: 20rem;
+}
+
+.vertical-card .card-btn-container{
+    margin-top: 1rem;
+    padding: 5px 1rem;
+}
+
+
+/* FOOTER */
+.footer-container {
+    background-color: var(--clr-darkblue);
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-items: center;
+    max-width: 100%;
+    padding: 1rem;
+    color: var(--clr-white);
+  }
+  
+
+  /* MEDIA QUERIES */
+  @media only screen and (max-width:850px){
+    .search-container{
+        border: none;
+    }
+  }
+
+  @media only screen and (max-width:770px){
+      .hero-container{
+          flex-direction: column;
+      }
+      .quiz-heading > p{
+          font-size: 2rem;
+      }
+      .highlight-txt{
+          font-size: 2.75rem;
+      }
+  }
+
+  @media only screen and (max-width: 610px) {
+    .nav-icon-container .profile-box{
+        display: inline-flex;
+    }
+    
+}

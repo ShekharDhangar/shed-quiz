@@ -1,0 +1,8 @@
+img{
+    object-fit: cover;
+    max-inline-size: 100%;
+    object-position: center;
+}
+.top{
+    margin-top: 10rem;
+}
