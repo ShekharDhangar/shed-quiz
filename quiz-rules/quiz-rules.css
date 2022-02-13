@@ -1,0 +1,22 @@
+@import url(/home-page.css);
+
+.rules-card{
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-clr);
+}
+.rules-header{
+    margin: 1rem 0;
+}
+.rules-title{
+    border-bottom: 2px solid var(--clr-black);
+}
+.rules-content > *{
+    margin: 5px 0;
+}
+
+
+@media only screen and (max-width: 770px){
+    .highlight-txt {
+    font-size: 1.5rem;
+    }
+}
