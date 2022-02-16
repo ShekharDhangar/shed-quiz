@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Rules</title>
+    <title>Document</title>
     <script
     src="https://kit.fontawesome.com/e5dbe6b99b.js"
     crossorigin="anonymous"
   ></script>
   <link rel="stylesheet" href="https://shed-ui.netlify.app/components/Navigation/navigation-media-query.css">
-    <link rel="stylesheet" href="/quiz-rules/quiz-rules.css">
-
+  <link rel="stylesheet" href="/board/board.css">
 </head>
 <body>
     <main>
@@ -23,13 +22,13 @@
                 <nav class="w-100 h-100 navbar">
                     <div class="flex nav-icon-container">
                         <div class="flex pointer rules-box icon-container">
-                            <a href="#">
+                            <a href="../quiz-rules/quiz-rules.html">
                                 <i class="icon rules-icon fa-solid fa-book-open"></i>
                             </a>
                             <span class="icon-txt">Rules</span>
                         </div>
                         <div class="flex pointer icon-container ">
-                            <a href="../board/board.html">
+                            <a href="#">
                                 <i class="icon board-icon fa-solid fa-clipboard-list"></i>
                             </a>
                             <span class="icon-txt">Board</span>
@@ -45,26 +44,61 @@
             </section>
         </header>
         <div class="top"></div>
-        <div class="flex p-1 rules-container">
-            <div class="p-1 rules-card">
-                <div class="rules-header">
-                    <div class="txt-center rules-title lt-bold txt-md">Rules to play quiz</div>
-                </div>
-                <div class="rules-content">   
-                    <ol class="style-numbering txt-md" >
-                        <li>You will have only <span class="txt-md lt-bold highlight-txt">30</span> seconds for each question.</li>
-                        <li>Once you select your answer, it can't be undone.</li>
-                        <li>You can't select any option once time goes off.</li>
-                        <li>Reward for Correct answer of each question: <span class="txt-md lt-bold highlight-txt">5 points</span></li>
-                        <li>Note: <span class="txt-md lt-bold highlight-txt">NO CHEATING HERE!</span></li>
-                </p>
-            </div>
-            <div class="w-100 p-2 card-btn-container">
-                <a href="../quiz-question/theoffice-quiz.html">
-                    <button class="btn btn-sm cta-btn w-100 quiz-cta-btn">Start Quiz</button>
-                </a>
-            </div>
-        </div>
+        <section class="flex-container table-container">
+            <table class="board-table p-1 txt-sm lt-bold txt-center">
+                <tbody>
+              <tr>
+                <th>UserName</th>
+                <th>User Score</th>
+                <th>User Coins</th>
+              </tr>
+              <tr>
+                <td data-th="UserName">
+                  TANAY
+                </td>
+                <td data-th="User Score">
+                  20
+                </td>
+                <td data-th="User Coins">
+                  20
+                </td>
+              </tr>
+              <tr>
+                <td data-th="UserName">
+                    SHEKHAR
+                </td>
+                <td data-th="User Score">
+                  15
+                </td>
+                <td data-th="User Coins">
+                  10
+                </td>
+              </tr>
+              <tr>
+                <td data-th="UserName">
+                  ROHIT
+                </td>
+                <td data-th="User Score">
+                 15
+                </td>
+                <td data-th="User Coins">
+                  15
+                </td>
+              </tr>
+              <tr>
+                  <td data-th="UserName">
+                      HETAV
+                </td>
+                <td data-th="User Score">
+                  15
+                </td>
+                <td data-th="User Coins">
+                    15
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
     </main>
 </body>
 </html>

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Rules</title>
+    <title>Score</title>
     <script
     src="https://kit.fontawesome.com/e5dbe6b99b.js"
     crossorigin="anonymous"
   ></script>
   <link rel="stylesheet" href="https://shed-ui.netlify.app/components/Navigation/navigation-media-query.css">
-    <link rel="stylesheet" href="/quiz-rules/quiz-rules.css">
-
+    <link rel="stylesheet" href="/result/result.css">
 </head>
 <body>
     <main>
@@ -23,7 +22,7 @@
                 <nav class="w-100 h-100 navbar">
                     <div class="flex nav-icon-container">
                         <div class="flex pointer rules-box icon-container">
-                            <a href="#">
+                            <a href="../quiz-rules/quiz-rules.html">
                                 <i class="icon rules-icon fa-solid fa-book-open"></i>
                             </a>
                             <span class="icon-txt">Rules</span>
@@ -45,26 +44,34 @@
             </section>
         </header>
         <div class="top"></div>
-        <div class="flex p-1 rules-container">
-            <div class="p-1 rules-card">
-                <div class="rules-header">
-                    <div class="txt-center rules-title lt-bold txt-md">Rules to play quiz</div>
+        <section class="flex p-1 result-container">
+            <div class="p-1 result-box txt-center">
+                <p class="txt-md txt-center user-name">Voila, <span class="txt-lg lt-bold highlight-txt">Shekhar</span></p>
+                <div class="result-msg-box  txt-center">
+                    <p class="lt-bold txt-md result-msg">
+                        You have scored:
+                    </p>
+                    <span class="score-number lt-bold txt-lg  highlight-txt ">
+                        10 points out of 15</span>
                 </div>
-                <div class="rules-content">   
-                    <ol class="style-numbering txt-md" >
-                        <li>You will have only <span class="txt-md lt-bold highlight-txt">30</span> seconds for each question.</li>
-                        <li>Once you select your answer, it can't be undone.</li>
-                        <li>You can't select any option once time goes off.</li>
-                        <li>Reward for Correct answer of each question: <span class="txt-md lt-bold highlight-txt">5 points</span></li>
-                        <li>Note: <span class="txt-md lt-bold highlight-txt">NO CHEATING HERE!</span></li>
-                </p>
-            </div>
-            <div class="w-100 p-2 card-btn-container">
-                <a href="../quiz-question/theoffice-quiz.html">
-                    <button class="btn btn-sm cta-btn w-100 quiz-cta-btn">Start Quiz</button>
-                </a>
-            </div>
-        </div>
+                <span class="txt-center lt-bold txt-md highlight-txt reward-coin"><i class="fa-solid fa-coins"></i>
+                    You get 5 Coins as reward!!</span>
+                <div class="p-1 txt-center txt-md result-details">
+                    <p class="attempted-question">Attempted-question: 3</p>
+                    <p class="correct-answer">Correct answer: 3</p>
+                    <p class="wrong-answer">Wrong answer: 3</p>
+                </div>
+                <div class="flex-container btn-container m-1 p-1">
+                    <a href="../answers/theoffice-answers.html">
+                        <button class="btn btn-sm">see answers</button>
+                    </a>
+                    <a href="../board/board.html">
+                        <button class="btn btn-sm">check board</button>
+                    </a>
+
+                </div>
+                </div>
+        </section>
     </main>
 </body>
 </html>

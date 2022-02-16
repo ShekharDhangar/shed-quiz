@@ -1,0 +1,18 @@
+@import url(/home-page.css);
+@import url(/utils.css);
+@import url(/quiz-question/theoffice-quiz.css);
+
+
+.result-box{
+    width: 40rem;
+    box-shadow: var(--box-shadow-clr);
+}
+.result-box > *{
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width:400px){
+    .btn-container{
+        justify-content: center;
+    }
+}

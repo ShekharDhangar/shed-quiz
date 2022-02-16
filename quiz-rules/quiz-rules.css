@@ -1,8 +1,10 @@
 @import url(/home-page.css);
+@import url(/utils.css);
 
 .rules-card{
     border-radius: 1rem;
     box-shadow: var(--box-shadow-clr);
+    padding-inline: 5rem 2.5rem;
 }
 .rules-header{
     margin: 1rem 0;
@@ -20,3 +22,4 @@
     font-size: 1.5rem;
     }
 }
+
