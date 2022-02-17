@@ -1,10 +1,6 @@
 @import url('https://shed-ui.netlify.app/component.css');
 @import url(/utils.css);
 
-.top{
-    margin-top: 10rem;
-}
-
 .hero-container{
     padding-inline: 5rem;
     gap: 2rem;
@@ -53,9 +49,25 @@
       }
   }
 
-  @media only screen and (max-width: 610px) {
-    .nav-icon-container .profile-box{
-        display: inline-flex;
+  @media only screen and (max-width: 850px) {
+      .search-container {
+      width: 0;
+      border: none;
     }
-    
+    .search-container:hover {
+      width: 100%;
+      border: 2px solid var(--clr-black);
+    }
 }
+        @media only screen and (max-width: 610px) {
+          .nav-icon-container .profile-box{
+              display: inline-flex;
+          }
+          
+      }
+
+      @media only screen and (max-width:450px){
+          .nav-icon-container .rules-box{
+              display: none;
+          }
+      }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <script
+    src="https://kit.fontawesome.com/e5dbe6b99b.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="https://shed-ui.netlify.app/components/Navigation/navigation-media-query.css">
+  <link rel="stylesheet" href="/quiz-question/theoffice-quiz.css">
+</head>
+<body>
+    <main>
+        <header>
+            <section class="flex nav-section">
+                <div class="flex logo-container">
+                    <a href="../index.html" class="logo">shed</a>
+                </div>
+                <nav class="w-100 h-100 navbar">
+                    <div class="flex nav-icon-container">
+                        <div class="flex pointer rules-box icon-container">
+                            <a href="../quiz-rules/quiz-rules.html">
+                                <i class="icon rules-icon fa-solid fa-book-open"></i>
+                            </a>
+                            <span class="icon-txt">Rules</span>
+                        </div>
+                        <div class="flex pointer icon-container ">
+                            <a href="../board/board.html">
+                                <i class="icon board-icon fa-solid fa-clipboard-list"></i>
+                            </a>
+                            <span class="icon-txt">Board</span>
+                        </div>
+                        <div class="flex pointer profile-box icon-container">
+                            <a href="/authentication/login.html">
+                                <i class="icon user-icon far fa-user"></i>
+                            </a>
+                            <span class="icon-txt">Profile</span>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <div class="top"></div>
+        <section class="flex p-1 quiz-question-container">
+        <div class="p-1 quiz-box que-1">
+            <header class="flex quiz-header" >
+                <div class="title"><span class="txt-lg lt-bold highlight-txt">the office</span></div>
+                <div class="lt-bold flex timer">
+                    <div class=" txt-sm  time-left">Time Left</div>
+                    <div class="txt-sm timer-sec">15</div>
+                </div>
+            </header>
+            <section>
+                    <p class="txt-md lt-bold question-txt">1. How many minutes did Michael worked at the office ?</p>
+                <div class="p-1 option-list">
+                    <button class="w-100 btn btn-sm option correct">
+                        9886000 minutes
+                        <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        9786000 minutes
+                        <i class="icon wrong fas fa-close" aria-hidden="true"></i>
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        9986000 minutes
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        9996000 minutes
+                    </button>
+                    </div>
+            </section>
+            <footer>
+                <div class="flex btn-container">
+                    <a href="../index.html"><button class="btn btn-sm">Quit</button></a>
+                    <button class="next-btn btn btn-sm">Next Question</button>
+                </div>
+            </footer>
+        </div>
+
+        <div class="p-1 quiz-box que-2 none">
+            <header class="flex quiz-header" >
+                <div class="title"><span class="txt-lg lt-bold  highlight-txt">the office</span></div>
+                <div class="lt-bold flex timer">
+                    <div class=" txt-sm  time-left">Time Left</div>
+                    <div class="txt-sm timer-sec">15</div>
+                </div>
+            </header>
+            <section>
+                <p class="txt-md lt-bold question-txt">2. Who is missing in the 9,986,000 minutes song ?</p>
+                <div class="p-1 option-list">
+                    <button class="w-100 btn btn-sm option correct">
+                        Darryl
+                        <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Kelly
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Dwight
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Ryan
+                        <i class="icon wrong fas fa-close" aria-hidden="true"></i>
+                    </button>
+                    </div>
+            </section>
+            <footer>
+               
+                <div class="flex btn-container">
+                    <a href="../index.html"><button class="btn btn-sm">Quit</button></a>
+                    <button class="next-btn btn btn-sm">Next Question</button>
+                </div>
+            </footer>
+        </div>
+        <div class="p-1 quiz-box que-2 none">
+            <header class="flex quiz-header" >
+                <div class="title"><span class="txt-lg lt-bold  highlight-txt">the office</span></div>
+                <div class="lt-bold flex timer">
+                    <div class=" txt-sm  time-left">Time Left</div>
+                    <div class="txt-sm timer-sec">15</div>
+                </div>
+            </header>
+            <section>
+                    <p class="txt-md lt-bold question-txt">3. "What Michael wears in casual fridays? "</p>
+                <div class="p-1 option-list">
+                    <button class="w-100 btn btn-sm option correct">
+                        Jeans
+                        <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Jacket
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Suit
+                    </button>
+                    <button class="w-100 btn btn-sm option">
+                        Shirt
+                        <i class="icon wrong fas fa-close" aria-hidden="true"></i>
+                    </button>
+                    </div>
+            </section>
+            <footer>
+               
+                <div class="flex btn-container">
+                    <a class="w-100 flex result-btn-link" href="../result/result.html">
+                        <button class="btn btn-sm result-btn">Result</button>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        </section>
+    </main>
+</body>
+<script src="/quiz-question/the-office.js"></script>
+</html>

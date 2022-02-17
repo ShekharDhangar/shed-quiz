@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Rules</title>
+    <title>answers</title>
     <script
     src="https://kit.fontawesome.com/e5dbe6b99b.js"
     crossorigin="anonymous"
   ></script>
   <link rel="stylesheet" href="https://shed-ui.netlify.app/components/Navigation/navigation-media-query.css">
-    <link rel="stylesheet" href="/quiz-rules/quiz-rules.css">
-
+    <link rel="stylesheet" href="/answers/theoffice-answers.css">
 </head>
 <body>
     <main>
@@ -23,7 +22,7 @@
                 <nav class="w-100 h-100 navbar">
                     <div class="flex nav-icon-container">
                         <div class="flex pointer rules-box icon-container">
-                            <a href="#">
+                            <a href="../quiz-rules/quiz-rules.html">
                                 <i class="icon rules-icon fa-solid fa-book-open"></i>
                             </a>
                             <span class="icon-txt">Rules</span>
@@ -45,26 +44,34 @@
             </section>
         </header>
         <div class="top"></div>
-        <div class="flex p-1 rules-container">
-            <div class="p-1 rules-card">
-                <div class="rules-header">
-                    <div class="txt-center rules-title lt-bold txt-md">Rules to play quiz</div>
+        <section class="flex flex-column p-1 quiz-answer-container">
+            <div class="p-1 quiz-box que-1">
+                <p class="txt-md lt-bold question-txt">1. How many minutes did Michael worked at the office ?</p>
+                <button class="w-100 btn btn-sm option correct">
+                    9986000 minutes
+                    <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                </button>
                 </div>
-                <div class="rules-content">   
-                    <ol class="style-numbering txt-md" >
-                        <li>You will have only <span class="txt-md lt-bold highlight-txt">30</span> seconds for each question.</li>
-                        <li>Once you select your answer, it can't be undone.</li>
-                        <li>You can't select any option once time goes off.</li>
-                        <li>Reward for Correct answer of each question: <span class="txt-md lt-bold highlight-txt">5 points</span></li>
-                        <li>Note: <span class="txt-md lt-bold highlight-txt">NO CHEATING HERE!</span></li>
-                </p>
-            </div>
-            <div class="w-100 p-2 card-btn-container">
-                <a href="../quiz-question/theoffice-quiz.html">
-                    <button class="btn btn-sm cta-btn w-100 quiz-cta-btn">Start Quiz</button>
-                </a>
-            </div>
-        </div>
+                <div class="p-1 quiz-box">
+                        <p class="txt-md lt-bold question-txt">2. Who is missing in the 9,986,000 minutes song ?</p>
+                        <button class="w-100 btn btn-sm option correct">
+                            Dwight
+                            <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="p-1 quiz-box">
+                        <p class="txt-md lt-bold question-txt">3. What Michael wears in casual fridays ?</p>
+                        <button class="w-100 btn btn-sm option correct">
+                            Jeans
+                            <i class="icon tick fas fa-check" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="btn-container">
+                        <a href="../index.html">
+                            <button class="btn btn-sm new-quiz-btn ">Start a new quiz ?</button>
+                        </a>
+                    </div>
+                </section>
     </main>
 </body>
 </html>

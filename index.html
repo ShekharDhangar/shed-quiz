@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHED-QUIZ</title>
-    <script
-    src="https://kit.fontawesome.com/e5dbe6b99b.js"
-    crossorigin="anonymous"
-  ></script>
   <link rel="stylesheet" href="https://shed-ui.netlify.app/components/Navigation/navigation-media-query.css">
     <link rel="stylesheet" href="/home-page.css">
 </head>
@@ -21,6 +17,11 @@
                 </div>
                 <nav class="w-100 h-100 navbar">
                     <div class="flex nav-icon-container">
+                        <div class="flex search-container">
+                            <input class="search-input" type="text" placeholder="Search..." />
+                            <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                        </div>
                         <div class="flex pointer rules-box icon-container">
                             <a href="./quiz-rules/quiz-rules.html">
                                 <i class="icon rules-icon fa-solid fa-book-open"></i>
@@ -28,7 +29,7 @@
                             <span class="icon-txt">Rules</span>
                         </div>
                         <div class="flex pointer icon-container ">
-                            <a href="#">
+                            <a href="./board/board.html">
                                 <i class="icon board-icon fa-solid fa-clipboard-list"></i>
                             </a>
                             <span class="icon-txt">Board</span>
@@ -48,7 +49,9 @@
                 <div class="flex flex-column txt-center quiz-heading">
                     <p class="txt-lg lt-bold">Are you even a true <span class="txt-xl highlight-txt" >sitcom</span> fan?</p>
                     <p class="txt-lg">Let's see now!</p>
-                    <button class="btn btn-sm see-quiz-btn">See Quizzes</button>
+                    <a href="#all-quizes">
+                        <button class="btn btn-sm see-quiz-btn">See Quizzes</button>
+                    </a>
                 </div>
                 <div class="hero-img-container">
                     <div class="img-container">
@@ -57,7 +60,7 @@
                 </div>
             </div>
             <div class="top"></div>
-            <section class="flex-container quiz-card-container p-1">
+            <section id="all-quizes" class="flex-container quiz-card-container p-1">
                 <div class="vertical-card overflow-hidden">
                     <div class="card-header">
                     <div class="img-container">
@@ -109,4 +112,8 @@
         </footer>
     </main>
 </body>
+<script
+    src="https://kit.fontawesome.com/e5dbe6b99b.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

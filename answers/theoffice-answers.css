@@ -1,0 +1,24 @@
+@import url(/utils.css);
+@import url(/home-page.css);
+@import url(/quiz-question/theoffice-quiz.css);
+
+
+.quiz-answer-container .quiz-box{
+    width: 100%;
+    max-width: 51rem;
+    margin: 1rem 0;
+}
+
+.quiz-answer-container .quiz-box .option.correct{
+    border: 2px solid var(--clr-black);
+    border-radius: 5px;
+    color: var(--success-clr);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: var(--clr-white);
+    justify-content: space-between;
+}
+
+.quiz-answer-container > .btn-container{
+    margin: 1rem 0 ;
+}
