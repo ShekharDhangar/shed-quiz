@@ -6,7 +6,6 @@
     box-shadow: var(--box-shadow-clr);
     width: 51rem;
     border-radius: 5px;
-    padding: 1.5rem;
 }
 .quiz-header{
     padding-bottom: 15px;
@@ -16,27 +15,24 @@
 .timer{
     color: var(--clr-white);
     background: var(--primary-clr);
-    height: 4.5rem;
-    padding: 0 8px;
+    height: 4rem;
+    padding: 1rem;
     border-radius: 5px;
+    gap :1rem;
     justify-content: space-around;
-    width: 15rem;
 }
-.timer .time-left{
-    user-select: none;
-}
+
 .question-txt{
-    margin: 1rem 0;
+    margin-top: 1rem;
     color: var(--primary-clr);
 }
 .option-list .option{
     border:2px solid var(--primary-clr);
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
-    justify-content: space-between;
-    color: var(--clr-black);
     background-color: var(--clr-white);
+    color: var(--clr-black);
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    justify-content: space-between;
 }
 .option:focus .icon{
     background-color: var(--clr-white);
@@ -47,12 +43,7 @@
     background-color: var(--primary-clr);
 }
 .option .icon{
-    pointer-events: none;
-    border: 2px solid transparent;
     padding: 5px;
-    font-size: 15px;
-    height: 15px;
-    width: 15px;
     border-radius: 50%;
 }
 .icon.tick{
