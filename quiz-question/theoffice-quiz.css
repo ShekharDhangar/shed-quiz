@@ -5,24 +5,22 @@
 .quiz-box{
     box-shadow: var(--box-shadow-clr);
     width: 51rem;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 .quiz-header{
-    padding-bottom: 15px;
     border-bottom: 2px solid var(--clr-black);
     justify-content: space-between;
 }
 .timer{
     color: var(--clr-white);
     background: var(--primary-clr);
-    height: 4rem;
-    padding: 1rem;
     border-radius: 5px;
     gap :1rem;
     justify-content: space-around;
 }
 
 .question-txt{
+    padding-inline: 1rem;
     margin-top: 1rem;
     color: var(--primary-clr);
 }
@@ -31,7 +29,7 @@
     background-color: var(--clr-white);
     color: var(--clr-black);
     border-radius: 5px;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     justify-content: space-between;
 }
 .option:focus .icon{
@@ -56,6 +54,7 @@
 }
 .btn-container{
     justify-content: space-between;
+    padding-inline: 1rem;
 }
 .next-btn{
     margin-left: auto;
@@ -64,7 +63,7 @@
     justify-content: flex-end;
 }
 @media only screen and (max-width:450px){
-    .title > span{
+    .quiz-title{
         font-size: 2.25rem;
     }
     .timer{
